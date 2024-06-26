@@ -13,6 +13,10 @@ def two(request):
 def tree(request):
     return render(request, 'main/tree.html')
 
+
+def admin(request):
+    return render(request, 'main/admin.py')
+
 def create(request):
     error = ''
     if request.method == "POST":
